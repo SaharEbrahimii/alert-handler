@@ -1,0 +1,66 @@
+@import "@styles/partials/variables";
+
+.root {
+    padding: $spacing-base * 2;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: $spacing-base * 2;
+    border-radius: $spacing-base;
+    display: flex;
+    align-self: center;
+
+    &__data {
+        &__title {
+            font-weight: $font-weight-demibold;
+            font-size: $font-size-base;
+            color: $primary-color;
+        }
+
+        &__description {
+            font-size: $font-size-h6;
+            line-height: $line-height-small;
+            color: $primary-color;
+        }
+    }
+
+    &__icon {
+        margin-left: $spacing-base * 2;
+        height: 28px;
+    }
+
+    &__info {
+        background: $info-light;
+        border: 1px solid $info-dark;
+
+        svg {
+            color: $info-dark;
+        }
+    }
+
+    &__success {
+        background: $success-light;
+        border: 1px solid $success-dark;
+
+        svg {
+            color: $success-dark;
+        }
+    }
+
+    &__error {
+        background: $error-light;
+        border: 1px solid $error-dark;
+
+        svg {
+            color: $error-dark;
+        }
+    }
+
+    &__warning {
+        background: $warning-light;
+        border: 1px solid $warning-dark;
+
+        svg {
+            color: $warning-dark;
+        }
+    }
+}
